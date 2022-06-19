@@ -1,0 +1,436 @@
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    
+}
+
+body{
+    background: rgb(23,15,35);
+}
+header{
+    position: fixed;
+    z-index: 9999px;
+    padding: 0 240px;
+}
+.navbar{
+       display: inline-block;
+       justify-content: center;
+       width: 1180px;
+       height: 80px;
+       padding: 0 auto;
+       
+       background-color: rgb(23,15,35);
+   }
+.navbar_total{
+    display: flex;
+}
+  .navbar_total .navbar_left{
+    display: flex;
+    padding:0px 120px ;
+}
+ .navbar_total .navbar_left i{
+   padding: 35px 22px;
+    font-size: 25px;
+    color:#ccc;
+}
+
+.navbar_total .navbar_left .search-container{
+    display: flex;
+    margin: 25px;
+    width: 380px;
+    height: 40px;
+    background-color: rgb(47,39,57);
+  border-radius: 20px;
+
+}
+.navbar_total .navbar_left .search-container i{
+    padding: 10px ;
+    font-size: 20px;
+    color: rgb(165,163,169);
+    position: relative;
+
+
+}
+
+ #right{
+    color: rgb(79,73,88);
+}
+
+ .navbar_total .navbar_left .search-container input{
+    background-color: transparent;
+    /* border: none; */
+    width: 100%;
+    color: #ccc;
+    border: unset;
+    display: block;
+    font-size: 15px;
+    border-radius: 20px;
+  
+   
+   
+
+}
+
+.navbar_right{
+    padding: 20px 30px;
+}
+.navbar_right button{
+    display: flex;
+    border-radius: 999px;
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: rgb(47,39,57);
+    margin: 0px 10px;
+}
+.navbar_right .add-icon{
+   display: inline;
+    text-align: center;
+    background-color:rgb(47,39,57);
+    border: none;
+    color: rgb(170,36,25);
+    font-size: 20px;
+    line-height: 13px;
+    border: 1px solid rgb(47,39,57);
+    border-radius: 50%;
+}
+#use{
+    background-color: rgb(206,213,227);
+
+}
+.navbar_right i{
+    transition: 0.5s;
+}
+.navbar_right i:hover{
+transform: scale(1.3);
+}
+
+ article .Description{
+    text-align: center;
+    justify-content: center;
+}
+article .list-info {
+    height: 1300px;
+    width: 250px;
+    background:rgb(35, 27, 46);
+    padding:0px 17px;
+    position: fixed;
+    z-index: 9999px;
+}
+    .list-info .lg{
+    width: 120px;
+    height: 40px;
+    margin:  15px;
+    background-position: 50% 50%;
+}
+.list-info a {
+    color: aliceblue;
+    display: flex;
+    margin: 17px;
+    transition: transform 1.0s;
+}
+.list-info a:hover{
+    transform: scale(1.2);
+}
+.list-info a i{
+    margin-right: 14px;
+}
+
+ article .infomation{
+    margin-top: 10px;
+    width: 200px;
+    height: 105px;
+    background: rgb(114, 0, 161);
+    border-radius: 8px;
+    margin-left: -6px;
+    text-align: center;
+
+}
+ .infomation p{
+    color: rgb(239, 237, 237);
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 8px;
+
+}
+.infomation .log-in{
+    width: 150px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: transparent;
+}
+
+ .infomation .upgrade{
+    width: 150px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    background-color: rgb(255,219,0);
+    border-bottom: 2px solid #ccc;
+}
+ hr{
+    display: block;
+    margin-top: 20px;
+    border-style: inset;
+}
+
+ article .add{
+    margin: 10px 10px;
+}
+.add i{
+    color: #ccc;
+    padding: 0 10px;
+}
+.add .add-playsit{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.heading span{
+    color: #ccc;
+    
+  
+} 
+ .album{
+  
+       width: 990px;
+       height: 360px;
+       animation-name: albumm;
+       animation-duration: 45s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       animation-delay: 30s;
+       border-radius: 10px;  
+   }
+   @keyframes albumm{
+       0%{background-image: url(image/banner.jpg);} 
+       25%{background-image: url(image/banner3.jpg);}  
+       50%{background-image:url(image/banner5.jpg) ;} 
+       75%{background-image: url(image//khongi.jpg);}
+       100%{background-image: url(image/aumi.jpg);}  
+   }
+  
+    .featured{
+       display: inline;
+       text-align: center;
+       margin: 0 auto;}
+     
+    
+ .u{
+display: flex;
+margin: 0 auto;
+
+ }     
+   .u .song p{
+    font-size: 14px;
+    padding-top: 9px;
+   }
+ .u  .song{
+       text-transform: capitalize;
+       padding: 40px 20px;
+       color: #ccc;
+       font-weight: bold;
+       position: relative;
+       text-align: center;
+      
+   }
+   .u .song img{
+       width: 210px;
+       height: 210px;
+   }
+ .u  .song span{
+       color: rgb(109,103,116);
+       font-size: 10px;
+       
+   }
+ .u  .song audio{
+       position: absolute;
+       width: 20px;
+       height: 40px;
+      display: none;
+      padding-top: 9px;
+       
+      
+   }
+ .u .song .thesing{
+       display: flex;
+      
+   }
+  .u  .album{
+    margin: 0 auto;
+       width: 973px;
+       height: 360px;
+       animation-name: albumm;
+       animation-duration: 95s;
+       animation-iteration-count: infinite;
+       animation-timing-function: linear;
+       animation-delay: 10s;
+       border-radius: 10px;
+       
+   
+   
+   }
+   @keyframes albumm{
+       0%{background-image: url(image/banner.jpg);} 
+       20%{background-image: url(image/banner2.jpg);}
+       40%{background-image:url(image/banner5.jpg) ;}
+       60%{background-image: url(image/banner3.jpg);} 
+       80%{background-image: url(image/banner4.png);}
+       100%{background-image: url(image/aumi.jpg);}  
+   }
+   /* .songsing{
+       display: flex;
+       text-align: center;
+       justify-content: center;
+       margin: 0 auto;
+   } */
+   .song{
+     
+   
+       text-transform: capitalize;
+       padding: 30px;
+       color: #ccc;
+    
+       font-weight: bold;
+       position: relative;
+      
+      
+   }
+   .song img{
+       width: 200px;
+       height: 200px;
+   }
+   .song span{
+       color: rgb(109,103,116);
+       font-size: 12px;
+   }
+   .song audio{
+       position: absolute;
+       width: 20px;
+       height: 40px;
+      display: none;
+       
+      
+   }
+   .song .sing{
+       display: flex;
+      flex-direction: column;
+   }
+ 
+   section{
+  
+    padding:  130px 400px;
+
+   }
+ article .list-info {
+    height: 1300px;
+    width: 250px;
+    background:rgb(35, 27, 46);
+    padding:0px 17px;
+    position: fixed;
+    z-index: 9999px;
+}
+    .list-info .lg{
+    width: 120px;
+    height: 40px;
+    margin:  15px;
+    background-position: 50% 50%;
+}
+.list-info a {
+    color: aliceblue;
+    display: flex;
+    margin: 17px;
+    transition: transform 1.0s;
+}
+.list-info a:hover{
+    transform: scale(1.2);
+}
+.list-info a i{
+    margin-right: 14px;
+}
+
+ article .infomation{
+    margin-top: 10px;
+    width: 200px;
+    height: 105px;
+    background: rgb(114, 0, 161);
+    border-radius: 8px;
+    margin-left: -6px;
+    text-align: center;
+
+}
+ .infomation p{
+    color: rgb(239, 237, 237);
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    padding: 15px 8px;
+
+}
+.infomation .log-in{
+    width: 150px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ccc;
+    background-color: transparent;
+}
+
+ .infomation .upgrade{
+    width: 150px;
+    line-height: 2.5;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+    background-color: rgb(255,219,0);
+    border-bottom: 2px solid #ccc;
+}
+ hr{
+    display: block;
+    margin-top: 20px;
+    border-style: inset;
+}
+
+ article .add{
+    margin: 10px 10px;
+}
+.add i{
+    color: #ccc;
+    padding: 0 10px;
+}
+.add .add-playsit{
+    background-color: transparent;
+    color: #FFFFFF;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.heading span{
+    color: #ccc;
+    
+  
+} 
